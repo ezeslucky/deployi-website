@@ -1,144 +1,103 @@
-import Icons from "@/components/global/icons"
-import { Heart } from 'lucide-react'
-import Link from 'next/link'
+"use client";
+import Link from "next/link";
 
-const Footer = () => {
-    return (
-        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32">
+// import { Icons } from "./icon";
 
-            <div className="hidden lg:block absolute -top-1/3 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
-            <div className="hidden lg:block absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
 
-            <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
+export default function Footer() {
+  return (
+    <footer className=" py-12 px-4 md:px-6 w-full">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="mb-8 md:mb-0">
+            <Link href="/" className="flex items-center gap-2">
+              {/* <Icons.logo className="icon-class w-2" /> */}
+              <h2 className="text-lg font-bold">Deployi</h2>
+            </Link>
 
-                <div className="flex flex-col items-start justify-start md:max-w-[200px]">
-                    <div className="flex items-start">
-                        <Icons.logo className="w-7 h-7" />
-                    </div>
-                    <p className="text-muted-foreground mt-4 text-sm text-start">
-                        Build beautiful, functional websites, without writing code
-                    </p>
-                    <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Made in India with
-                        <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
-                    </span>
-                </div>
-
-                <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="">
-                            <h3 className="text-base font-medium text-white">
-                                Product
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Testimonials
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Integration
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-10 md:mt-0 flex flex-col">
-                            <h3 className="text-base font-medium text-white">
-                                Integrations
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Facebook
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Instagram
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Twitter
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        LinkedIn
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="">
-                            <h3 className="text-base font-medium text-white">
-                                Resources
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-10 md:mt-0 flex flex-col">
-                            <h3 className="text-base font-medium text-white">
-                                Company
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Terms & Conditions
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+            <h1 className="dark:text-gray-300 mt-4">
+              Build by{" "}
+              <span className="dark:text-[#039ee4]">
+                <Link href="https://x.com/ezeslucky">@ezeslucky</Link>
+              </span>
+            </h1>
+            <div className="mt-2">
+            
             </div>
+            <p className="text-sm dark:text-gray-400 mt-5">
+              © {new Date().getFullYear()} Deployi. All rights reserved.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-semibold mb-4">Pages</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="https://docs.deployi.me/" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Docs
+                  </Link>
+                </li>
 
-            <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
-                <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                    &copy; {new Date().getFullYear()} Astra AI INC. All rights reserved.
-                </p>
+                <li>
+                  <Link href="/examples" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Examples
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/pricing" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  
+                </li>
+              </ul>
             </div>
-
-        </footer>
-    )
+            <div>
+              <h3 className="font-semibold mb-4">Socials</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="https://github.com/ezeslucky/deployi.git" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Github
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.linkedin.com/in/ezeslucky" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://x.com/ezeslucky" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    X
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Legal</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/privacy-policy" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/tos" className="text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white">
+                    Terms of Service
+                  </Link>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className=" w-full flex mt-4 items-center justify-center   ">
+          <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 select-none">
+            Deployi
+          </h1>
+        </div>
+      
+      </div>
+    </footer>
+  );
 }
-
-export default Footer

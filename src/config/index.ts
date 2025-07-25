@@ -2,11 +2,11 @@ import { Metadata } from "next";
 
 export const SITE_CONFIG: Metadata = {
     title: {
-        // write a default title for astra a ai powered website builder suggest something unique and catchy don't use the same words of ai powered website builder give a unique name
-        default: "Astra - AI Powered Website Builder",
-        template: `%s | Astra`
+        // write a default title for Deployi a ai powered website builder suggest something unique and catchy don't use the same words of ai powered website builder give a unique name
+        default: "Deployi - AI Powered Website Builder",
+        template: `%s | Deployi`
     },
-    description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+    description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
     icons: {
         icon: [
             {
@@ -16,8 +16,8 @@ export const SITE_CONFIG: Metadata = {
         ]
     },
     openGraph: {
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Deployi - AI Powered Website Builder",
+        description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
         images: [
             {
                 url: "/assets/og-image.png",
@@ -27,13 +27,13 @@ export const SITE_CONFIG: Metadata = {
     twitter: {
         card: "summary_large_image",
         creator: "@shreyassihasane",
-        title: "Astra - AI Powered Website Builder",
-        description: "Astra is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Deployi - AI Powered Website Builder",
+        description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
         images: [
             {
                 url: "/assets/og-image.png",
             }
         ]
     },
-    metadataBase: new URL("https://astra-app.vercel.app"),
+    metadataBase: new URL("https://Deployi-app.vercel.app"),
 };

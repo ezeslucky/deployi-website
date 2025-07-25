@@ -1,10 +1,12 @@
-import { Icons } from "@/components";
+// import { Icons } from "@/components";
+
+import Icons from "@/components/global/icons";
 
 export const perks = [
     {
         icon: Icons.auth,
         title: "Sign Up",
-        info: "Create your free account to get started with Astra.",
+        info: "Create your free account to get started with Deployi.",
     },
     {
         icon: Icons.customize,
@@ -21,33 +23,64 @@ export const perks = [
 export const features = [
     {
         icon: Icons.bolt,
-        title: "Fast Setup",
-        info: "Get your website up and running in minutes with our intuitive AI-powered builder.",
+        title: "Flexible Application Deployment",
+        info: "Deploy any application using Nixpacks, Heroku Buildpacks, or your custom Dockerfile, tailored to your stack.",
     },
     {
         icon: Icons.palette,
-        title: "Customizable Templates",
-        info: "Choose from a variety of stunning templates and customize them to suit your brand.",
+        title: " Docker Compose Support",
+        info: "Deploy complex applications natively with full Docker Compose integration for seamless orchestration.",
     },
     {
         icon: Icons.seo,
-        title: "SEO Optimized",
-        info: "Built-in SEO features ensure your website ranks well on search engines.",
+        title: "Multi-server Support",
+        info: "Effortlessly deploy your applications on remote servers, with zero configuration hassle.",
     },
     {
         icon: Icons.monitor,
-        title: "Responsive Design",
-        info: "Your website will look great on any device, from desktops to mobile phones.",
+        title: "Database Management with Backups",
+        info: "Manage and back up MySQL, PostgreSQL, MongoDB, MariaDB, Redis directly from Deployi.",
     },
     {
         icon: Icons.shop,
-        title: "E-Commerce Ready",
-        info: "Start selling online with our e-commerce features and integrations.",
+        title: "Advanced User Management",
+        info: "Control user access with detailed roles and permissions, keeping your deployments secure and organized.",
     },
     {
         icon: Icons.server,
-        title: "Secure Hosting",
-        info: "Enjoy peace of mind with secure and reliable hosting for your website.",
+        title: "API & CLI Access",
+        info: "Need custom functionality? Deployi offers complete API and CLI access to fit your needs.",
+    },
+    
+     {
+        icon: Icons.servero,
+        title: "Self-hosted & Open Source",
+        info: "Deployi provides complete control with self-hosting capabilities and open-source transparency.",
+    },
+     {
+        icon: Icons.serveru,
+        title: "Built for developers",
+        info: "Designed specifically for engineers and developers seeking control and flexibility.",
+    },
+     {
+        icon: Icons.servere,
+        title: "Real-time Monitoring & Alerts",
+        info: "Monitor CPU, memory, and network usage in real-time across your deployments for full visibility.",
+    },
+     {
+        icon: Icons.servers,
+        title: "Open Source Templates",
+        info: "Get started quickly with pre-configured templates for popular tools like Supabase, Cal.com, and Pocketbase.",
+    },
+     {
+        icon: Icons.serverr,
+        title: "Docker Swarm Clusters",
+        info: "Scale your deployments seamlessly with built-in Docker Swarm support for robust, multi-node applications.",
+    },
+       {
+        icon: Icons.serve,
+        title: "No Vendor Lock-In",
+        info: "Experience complete freedom to modify, scale, and customize Deployi to suit your specific needs.",
     },
 ];
 
