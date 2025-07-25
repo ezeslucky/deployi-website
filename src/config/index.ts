@@ -3,10 +3,10 @@ import { Metadata } from "next";
 export const SITE_CONFIG: Metadata = {
     title: {
         // write a default title for Deployi a ai powered website builder suggest something unique and catchy don't use the same words of ai powered website builder give a unique name
-        default: "Deployi - AI Powered Website Builder",
+        default: "Deployi - Deploy, manage & scale apps effortlessly",
         template: `%s | Deployi`
     },
-    description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+    description: "Deployi is your all-in-one platform to deploy, manage, and scale any kind of application effortlessly. Whether you're deploying a simple web app or a complex microservices architecture, Deployi handles it all with speed, security, and flexibility",
     icons: {
         icon: [
             {
@@ -16,8 +16,8 @@ export const SITE_CONFIG: Metadata = {
         ]
     },
     openGraph: {
-        title: "Deployi - AI Powered Website Builder",
-        description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        title: "Deployi - Deploy, manage & scale apps effortlessly",
+        description: "Deployi is your all-in-one platform to deploy, manage, and scale any kind of application effortlessly. Whether you're deploying a simple web app or a complex microservices architecture, Deployi handles it all with speed, security, and flexibility",
         images: [
             {
                 url: "/assets/og-image.png",
@@ -26,14 +26,14 @@ export const SITE_CONFIG: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        creator: "@shreyassihasane",
-        title: "Deployi - AI Powered Website Builder",
-        description: "Deployi is an AI powered website builder that helps you create a website in minutes. No coding skills required. Get started for free!",
+        creator: "@ezeslucky",
+        title: "Deployi - Deploy, manage & scale apps effortlessly",
+        description: "Deployi is your all-in-one platform to deploy, manage, and scale any kind of application effortlessly. Whether you're deploying a simple web app or a complex microservices architecture, Deployi handles it all with speed, security, and flexibility",
         images: [
             {
                 url: "/assets/og-image.png",
             }
         ]
     },
-    metadataBase: new URL("https://Deployi-app.vercel.app"),
+    metadataBase: new URL("https://deployi.me"),
 };
