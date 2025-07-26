@@ -67,7 +67,8 @@ export default function HomePage() {
             <div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
             {/* <div className="mt-6 flex flex-wrap items-center justify-center gap-6 md:flex-nowrap"> */}
   <code className="flex flex-row items-center gap-4 rounded-xl border p-3 font-sans">
-                  curl -sSL https://deployi.me/install.sh | sh
+                  curl -sSL https://deployi.me/install.sh | bash
+
                   <button
                     type="button"
                     onClick={() =>
