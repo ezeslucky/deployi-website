@@ -74,13 +74,13 @@ const Navbar = async () => {
             {/* Auth Buttons */}
             <div className="flex items-center gap-3">
               <Link
-                href="https://app.deployi.me/"
+                href="https://apps.deployi.me/"
                 className={buttonVariants({ size: "sm", variant: "ghost" })}
               >
                 Login
               </Link>
               <Link
-                href="https://app.deployi.me/register"
+                href="https://apps.deployi.me/register"
                 className={buttonVariants({
                   size: "sm",
                   className: "hidden md:flex",
