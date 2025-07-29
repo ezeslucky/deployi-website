@@ -11,7 +11,7 @@ const Navbar = async () => {
         <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
           {/* Left: Logo */}
           <div className="flex items-start">
-            <Link href="/logo.svg" className="flex items-center gap-2">
+            <Link href="https://deployi.me" className="flex items-center gap-2">
               {/* ✅ Replace with your logo */}
               <Image
                 src="/logo.svg" // put your SVG in public/logo.svg
